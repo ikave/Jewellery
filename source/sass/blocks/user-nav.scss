@@ -1,0 +1,21 @@
+.user-nav {
+  @include reset-list;
+  display: flex;
+}
+
+.user-nav__item {
+  margin-right: 35px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.user-nav__link {
+  @include link-hover;
+
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 21px;
+  color: $text;
+}

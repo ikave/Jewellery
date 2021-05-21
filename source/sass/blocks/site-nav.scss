@@ -1,0 +1,38 @@
+.site-nav {
+  @include reset-list;
+  display: flex;
+
+  @media (max-width: $medium-width) {
+    flex-direction: column;
+  }
+}
+
+.site-nav__item {
+  margin-right: 35px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  @media (max-width: $medium-width) {
+    margin-right: 0;
+    margin-bottom: 21px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.site-nav__link {
+  @include link-hover;
+  font-weight: 500;
+  line-height: 24px;
+  color: $text;
+
+  @media (max-width: $medium-width) {
+    font-size: 24px;
+    line-height: 36px;
+    color: $white;
+  }
+}

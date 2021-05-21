@@ -1,0 +1,13 @@
+.additional-nav {
+  @include reset-list;
+}
+
+.additional-nav__item {
+  margin-bottom: 20px;
+}
+
+.additional-nav__link {
+  font-size: 18px;
+  line-height: 23px;
+  color: rgba($white, 0.75);
+}

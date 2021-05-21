@@ -1,0 +1,14 @@
+.header-cart__text {
+  @media (max-width: $medium-width) {
+    display: none;
+  }
+}
+
+.header-cart__icon {
+  display: none;
+  stroke: $text;
+
+  @media (max-width: $medium-width) {
+    display: block;
+  }
+}

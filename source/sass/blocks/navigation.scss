@@ -1,14 +1,39 @@
 .navigation {
   display: flex;
   justify-content: center;
+  padding: 19px 0;
+  border-top: 1px solid #F6F5F4;
+  border-bottom: 1px solid #F6F5F4;
+
   @media (max-width: $medium-width) {
     display: block;
+    padding: 0 45px 75px;
+  }
+
+  @media (max-width: $small-width) {
+    padding: 0 15px 75px;
+  }
+}
+
+.navigation__site {
+  @media (max-width: $medium-width) {
+    margin-bottom: 41px;
+  }
+
+  @media (max-width: $small-width) {
+    margin-bottom: 26px;
   }
 }
 
 .navigation__additional {
   display: none;
+
   @media (max-width: $medium-width) {
     display: block;
+    margin-bottom: 45px;
+  }
+
+  @media (max-width: $small-width) {
+    margin-bottom: 35px;
   }
 }

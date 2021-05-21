@@ -1,0 +1,19 @@
+.login {
+  &--mobile {
+    display: none;
+  }
+
+  @media (max-width: $medium-width) {
+    font-size: 18px;
+    line-height: 23px;
+    
+    &--desktop {
+      display: none;
+    }
+
+    &--mobile {
+      display: block;
+      color: $white;
+    }
+  }
+}
