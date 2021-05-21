@@ -1,0 +1,33 @@
+.header {
+
+}
+
+.header__wrapper {
+  max-width: $max-width;
+  margin: 0 auto;
+  padding: 0 98px;
+}
+
+.header__top {
+  height: 115px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__toggle {
+  display: none;
+
+  @media (max-width: $medium-width) {
+    display: block;
+  }
+}
+
+.header__search {
+  @media (max-width: $medium-width) {
+    display: block;
+    width: 100%;
+    order: 1;
+  }
+}

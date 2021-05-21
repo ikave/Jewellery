@@ -1,0 +1,14 @@
+.navigation {
+  display: flex;
+  justify-content: center;
+  @media (max-width: $medium-width) {
+    display: block;
+  }
+}
+
+.navigation__additional {
+  display: none;
+  @media (max-width: $medium-width) {
+    display: block;
+  }
+}
