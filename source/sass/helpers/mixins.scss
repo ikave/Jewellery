@@ -6,7 +6,7 @@
 
 @mixin link-hover {
   transition: color 0.2s ease;
-  
+
   &:hover,
   &:focus {
     color: $accent;
@@ -14,5 +14,19 @@
 
   &:active {
     color: rgba($accent, 0.3);
+  }
+}
+
+@mixin container {
+  max-width: $max-width;
+  margin: 0 auto;
+  padding: 0 98px;
+
+  @media (max-width: $medium-width) {
+    padding: 0 45px;
+  }
+
+  @media (max-width: $small-width) {
+    padding: 0 15px;
   }
 }
