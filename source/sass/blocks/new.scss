@@ -1,0 +1,48 @@
+.new {
+  @include container;
+  padding-top: 119px;
+
+  @media (max-width: $medium-width) {
+    padding-top: 69px;
+  }
+
+  @media (max-width: $small-width) {
+    padding-top: 59px;
+  }
+}
+
+.new__list {
+  @include reset-list;
+}
+
+.new__item {
+  display: flex;
+  justify-content: center;
+}
+
+.new__item a {
+  color: $text;
+}
+
+.new__item img {
+  display: block;
+  margin-bottom: 21px;
+
+  @media (max-width: $small-width) {
+    margin-bottom: 15px;
+  }
+}
+
+.new__item h3 {
+  margin-bottom: 6px;
+  font-weight: 500;
+  font-size: 16px;
+  text-align: center;
+}
+
+.new__item p {
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  text-align: center;
+}
