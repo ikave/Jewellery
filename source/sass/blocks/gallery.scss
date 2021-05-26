@@ -21,7 +21,9 @@
 }
 
 .gallery__column--mobile img:first-child {
-  display: none;
+  @media (max-width: $small-width) {
+    display: none;
+  }
 }
 
 .gallery__column img {
