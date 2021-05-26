@@ -1,10 +1,11 @@
 .footer {
+  margin-top: auto;
   padding: 89px 0 95px;
   color: $white;
   background-color: $black;
 
   @media (max-width: $medium-width) {
-      padding: 49px 0 55px;
+    padding: 49px 0 55px;
   }
 
   @media (max-width: $small-width) {

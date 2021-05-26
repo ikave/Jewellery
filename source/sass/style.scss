@@ -1,22 +1,21 @@
-@import 'base/fonts';
-@import 'vendors/normalize';
-@import 'helpers/variables';
-@import 'helpers/mixins';
-@import 'base/base';
-@import 'blocks/visually-hidden';
-
-@import 'blocks/header';
-@import 'blocks/user-nav';
-@import 'blocks/site-nav';
-@import 'blocks/additional-nav';
-@import 'blocks/navigation';
-@import 'blocks/search';
-@import 'blocks/login';
-@import 'blocks/header-cart';
-@import 'blocks/banner';
-
-@import 'blocks/footer';
-@import 'blocks/subscription';
-@import 'blocks/footer-nav';
-@import 'blocks/socials';
+@import "vendors/swiper-bundle";
+@import "base/fonts";
+@import "vendors/normalize";
+@import "helpers/variables";
+@import "helpers/mixins";
+@import "base/base";
+@import "blocks/visually-hidden";
+@import "blocks/page-header";
+@import "blocks/user-nav";
+@import "blocks/site-nav";
+@import "blocks/additional-nav";
+@import "blocks/navigation";
+@import "blocks/search";
+@import "blocks/login";
+@import "blocks/header-cart";
+@import "blocks/intro";
+@import "blocks/footer";
+@import "blocks/subscription";
+@import "blocks/footer-nav";
+@import "blocks/socials";
 
