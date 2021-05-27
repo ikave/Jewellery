@@ -37,6 +37,7 @@ const swiper = new Swiper('.swiper-container', {
     1024: {
       slidesPerView: 4,
       slidesPerGroup: 4,
+      allowTouchMove: false,
     },
   },
 

@@ -37,6 +37,7 @@ const swiper = new Swiper('.swiper-container', {
     1024: {
       slidesPerView: 4,
       slidesPerGroup: 4,
+      allowTouchMove: false,
     },
   },
 
@@ -55,10 +56,10 @@ const swiper = new Swiper('.swiper-container', {
   },
 });
 
-const faqAccordeon = document.querySelectorAll('.faq__item');
+const faqAccordion = document.querySelectorAll('.faq__item');
 const faqButtons = document.querySelectorAll('.faq__toggle');
 
-faqAccordeon.forEach((item, index) => {
+faqAccordion.forEach((item, index) => {
   item.addEventListener('click', () => {
     item.classList.toggle('faq__item--opened');
     faqButtons[index].classList.toggle('faq__toggle--opened');
