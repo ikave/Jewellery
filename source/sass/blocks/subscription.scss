@@ -17,7 +17,7 @@
 .subscription__form {
   display: flex;
   max-width: 500px;
-  padding: 0 0 10px 0;
+  padding: 0 0 9px 0;
   border-bottom: 1px solid $white;
 
   @media (max-width: $medium-width) {
@@ -28,7 +28,7 @@
 .subscription__form input {
   width: 100px;
   flex-grow: 1;
-  padding: 0 20px 10px 0;
+  padding: 10px 20px 0 0;
   border: none;
   font-family: inherit;
   font-weight: 500;

@@ -1,13 +1,14 @@
 .gallery {
   @include container;
   padding-top: 108px;
-  padding-bottom: 132px;
+  padding-bottom: 130px;
 }
 
 .gallery__wrapper {
   display: grid;
   grid-template-columns: 1fr 1.74fr 1fr 1fr;
   column-gap: 27px;
+  padding-top: 11px;
 
   @media (max-width: $small-width) {
     grid-template-columns: 1fr 1fr;

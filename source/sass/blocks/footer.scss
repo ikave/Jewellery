@@ -25,6 +25,8 @@
 }
 
 .footer__subscription {
+  max-width: 500px;
+  width: 100%;
   margin-right: 20px;
 
   @media (max-width: $medium-width) {
@@ -36,10 +38,13 @@
 
 .footer__navigation {
   margin-right: 20px;
+  padding-top: 6px;
 
   @media (max-width: $medium-width) {
-    // margin-right: 87px;
+    display: block;
+    width: 100%;
     margin-right: 0;
+    margin-bottom: 30px;
   }
 
   @media (max-width: $small-width) {
@@ -48,6 +53,8 @@
 }
 
 .footer__socials {
+  padding-top: 6px;
+
   @media (max-width: $small-width) {
     display: block;
     width: 100%;

@@ -3,14 +3,14 @@
 }
 
 .slider__wrapper {
-  padding-bottom: 50px;
+  padding-bottom: 87px;
 }
 
 .slider__pagination .swiper-pagination-bullet {
   width: auto;
   height: auto;
   margin: 0;
-  padding: 4px;
+  padding: 2px;
   font-weight: 500;
   font-size: 16px;
   color: $gray;
@@ -31,7 +31,6 @@
   max-width: 1170px;
   width: 100%;
   margin: 0 auto;
-  transform: translateY(-50%);
 
   @media (max-width: $small-width) {
     display: none;

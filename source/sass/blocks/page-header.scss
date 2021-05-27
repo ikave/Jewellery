@@ -3,6 +3,11 @@
   &--nojs {
     background-color: $accent;
   }
+
+  &--opened {
+    width: 100%;
+    height: 100vh;
+  }
 }
 
 .page-header--nojs .page-header__toggle {

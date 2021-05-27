@@ -2,18 +2,18 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  width: 32%;
-  min-width: 300px;
+  max-width: 380px;
+  width: 100%;
 
   @media (max-width: $medium-width) {
-    width: auto;
     justify-content: flex-start;
-    min-width: auto;
+    max-width: none;
   }
 }
 
 .footer-nav__list {
   @include reset-list;
+  margin-right: 20px;
 
   @media (max-width: $medium-width) {
     margin-right: 87px;
