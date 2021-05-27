@@ -9,28 +9,28 @@
   font-family: $secondary-font;
   color: $white;
   background-color: $overlay;
-  background-image: url('../../img/intro-desktop2.jpg');
+  background-image: url("../../img/intro-desktop2.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 
   @media (min-resolution: 2dppx), (min-resolution: 144dpi) {
-    background-image: url('../../img/intro-desktop2@2x.jpg');
+    background-image: url("../../img/intro-desktop2@2x.jpg");
   }
 
   @media (max-width: $medium-width) {
-    background-image: url('../../img/intro-tablet.jpg');
+    background-image: url("../../img/intro-tablet.jpg");
 
     @media (min-resolution: 2dppx), (min-resolution: 144dpi) {
-      background-image: url('../../img/intro-tablet@2x.jpg');
+      background-image: url("../../img/intro-tablet@2x.jpg");
     }
   }
 
   @media (max-width: $small-width) {
-    background-image: url('../../img/intro-mobile.jpg');
+    background-image: url("../../img/intro-mobile.jpg");
 
     @media (min-resolution: 2dppx), (min-resolution: 144dpi) {
-      background-image: url('../../img/intro-mobile@2x.jpg');
+      background-image: url("../../img/intro-mobile@2x.jpg");
     }
   }
 }
