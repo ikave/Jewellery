@@ -5,6 +5,10 @@
   @media (max-width: $medium-width) {
     padding-top: 52px;
   }
+
+  @media (max-width: $small-width) {
+    padding-top: 44px;
+  }
 }
 
 .blog__content {
@@ -14,6 +18,10 @@
   @media (max-width: $medium-width) {
     flex-direction: column;
     justify-content: flex-start;
+  }
+
+  @media (max-width: $small-width) {
+    margin-top: -5px;
   }
 }
 
@@ -37,6 +45,14 @@
 
     &:last-child {
       margin-bottom: 50px;
+    }
+  }
+
+  @media (max-width: $small-width) {
+    margin-bottom: 40px;
+
+    &:last-child {
+      margin-bottom: 40px;
     }
   }
 }

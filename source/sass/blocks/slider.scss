@@ -9,6 +9,11 @@
     margin-top: -10px;
     padding-bottom: 75px;
   }
+
+  @media (max-width: $small-width) {
+    margin-top: -15px;
+    padding-bottom: 65px;
+  }
 }
 
 .slider__pagination .swiper-pagination-bullet {
@@ -25,6 +30,13 @@
 
 .slider__pagination .swiper-pagination-bullet-active {
   color: $text;
+}
+
+.slider__pagination .swiper-pagination-current,
+.slider__pagination .swiper-pagination-total {
+  @media (max-width: $small-width) {
+    padding: 0 6px;
+  }
 }
 
 .slider__actions {

@@ -62,6 +62,9 @@
       el: '.swiper-pagination',
       type: 'bullets',
       clickable: true,
+      renderBullet: function (index, className) {
+        return '<button class="' + className + '">' + (index + 1) + '</button>';
+      }
     },
 
     navigation: {

@@ -14,6 +14,10 @@
   font-size: 34px;
   letter-spacing: 0.03em;
   text-align: center;
+
+  @media (max-width: $small-width) {
+    margin-bottom: 28px;
+  }
 }
 
 .faq__list {
@@ -40,7 +44,11 @@
   }
 
   @media (max-width: $small-width) {
-    padding: 25px;
+    padding: 16px 24px 21px;
+
+    &--opened {
+      padding: 16px 24px 19px;
+    }
   }
 }
 
@@ -53,6 +61,8 @@
 
   @media (max-width: $small-width) {
     align-items: flex-start;
+    font-size: 16px;
+    line-height: 1.4;
   }
 }
 
@@ -67,8 +77,11 @@
   }
 
   @media (max-width: $small-width) {
+    max-width: 209px;
     margin: 0;
-    padding-right: 25px;
+    // padding-right: 25px;
+    font-size: 14px;
+    line-height: 20px;
   }
 }
 
@@ -77,6 +90,10 @@
 
   @media (max-width: $medium-width) {
     margin-bottom: 27px;
+  }
+
+  @media (max-width: $small-width) {
+    margin-bottom: 14px;
   }
 }
 
@@ -99,6 +116,10 @@
   @media (max-width: $medium-width) {
     width: 23px;
     height: 12px;
+  }
+
+  @media (max-width: $small-width) {
+    margin-top: 7px;
   }
 }
 

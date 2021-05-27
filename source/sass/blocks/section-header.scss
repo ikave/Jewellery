@@ -14,6 +14,10 @@
   line-height: 44px;
   letter-spacing: 0.03em;
   text-align: center;
+
+  @media (max-width: $small-width) {
+    margin-bottom: 20px;
+  }
 }
 
 .section-header a {
@@ -40,6 +44,12 @@
   &:focus {
     &::before {
       width: 0;
+    }
+  }
+
+  @media (max-width: $small-width) {
+    &::before {
+      bottom: -5px;
     }
   }
 }
