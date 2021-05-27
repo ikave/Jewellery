@@ -16,6 +16,7 @@
 }
 
 .gallery__column {
+  @include reset-list;
   display: flex;
   flex-direction: column;
 }
@@ -26,11 +27,19 @@
   }
 }
 
+.gallery__item {
+  margin-bottom: 34px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
 .gallery__column img {
   display: block;
   width: 100%;
   height: 100%;
-  margin-bottom: 34px;
+
   object-fit: cover;
 
   @media (max-width: $small-width) {
