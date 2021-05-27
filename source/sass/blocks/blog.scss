@@ -1,6 +1,10 @@
 .blog {
   @include container;
   padding-top: 102px;
+
+  @media (max-width: $medium-width) {
+    padding-top: 52px;
+  }
 }
 
 .blog__content {
@@ -18,6 +22,21 @@
 
   @media (max-width: $medium-width) {
     width: 100%;
-    margin-bottom: 30px;
+  }
+}
+
+.blog__article {
+  margin-bottom: 30px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  @media (max-width: $medium-width) {
+    margin-bottom: 50px;
+
+    &:last-child {
+      margin-bottom: 50px;
+    }
   }
 }

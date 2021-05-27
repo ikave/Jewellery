@@ -1,6 +1,10 @@
 .faq {
   @include container;
   padding-top: 119px;
+
+  @media (max-width: $medium-width) {
+    padding-top: 20px;
+  }
 }
 
 .faq h2 {
@@ -28,8 +32,10 @@
   }
 
   @media (max-width: $medium-width) {
+    padding: 43px 49px 44px 48px;
+
     &--opened {
-      padding-bottom: 35px;
+      padding-bottom: 45px;
     }
   }
 
@@ -55,6 +61,11 @@
   margin: 0 0 0 4px;
   max-width: 520px;
 
+  @media (max-width: $medium-width) {
+    max-width: 530px;
+    margin: 0;
+  }
+
   @media (max-width: $small-width) {
     margin: 0;
     padding-right: 25px;
@@ -65,7 +76,7 @@
   margin-bottom: 7px;
 
   @media (max-width: $medium-width) {
-    margin-bottom: 14px;
+    margin-bottom: 27px;
   }
 }
 
@@ -84,8 +95,18 @@
   &--opened {
     transform: rotate(0deg);
   }
+
+  @media (max-width: $medium-width) {
+    width: 23px;
+    height: 12px;
+  }
 }
 
 .faq__toggle svg {
   fill: none;
+
+  @media (max-width: $medium-width) {
+    width: 24px;
+    height: 16px;
+  }
 }

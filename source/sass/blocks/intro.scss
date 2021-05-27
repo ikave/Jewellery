@@ -21,6 +21,7 @@
 
   @media (max-width: $medium-width) {
     background-image: url("../img/intro-tablet.jpg");
+    box-shadow: none;
 
     @media (min-resolution: 2dppx), (min-resolution: 144dpi) {
       background-image: url("../img/intro-tablet@2x.jpg");

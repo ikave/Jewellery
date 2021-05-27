@@ -3,9 +3,6 @@
 
   display: flex;
 
-  &:first-child {
-    margin-bottom: 30px;
-  }
 
   &--reverse {
     flex-direction: row-reverse;
@@ -69,6 +66,10 @@
 
 .blog-article--big .blog-article__content {
   margin: auto 0 0 auto;
+
+  @media (max-width: $medium-width) {
+    justify-content: center;
+  }
 }
 
 .blog-article__content time {

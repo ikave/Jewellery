@@ -44,6 +44,13 @@
           }
         },
       },
+      768: {
+        pagination: {
+          renderBullet: function (index, className) {
+            return '<button class="' + className + '">' + (index + 1) + '</button>';
+          }
+        },
+      },
       1024: {
         slidesPerView: 4,
         slidesPerGroup: 4,
@@ -55,9 +62,6 @@
       el: '.swiper-pagination',
       type: 'bullets',
       clickable: true,
-      renderBullet: function (index, className) {
-        return '<button class="' + className + '">' + (index + 1) + '</button>';
-      }
     },
 
     navigation: {

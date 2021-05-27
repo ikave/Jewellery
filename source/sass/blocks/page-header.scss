@@ -57,7 +57,7 @@
   align-items: flex-start;
 
   @media (max-width: $medium-width) {
-    padding: 55px 45px 45px;
+    padding: 44px 45px 54px;
   }
 
   @media (max-width: $small-width) {
@@ -98,7 +98,7 @@
   transform: translateX(-50%);
   color: $accent;
 
-  @media (max-width: $small-width) {
+  @media (max-width: $medium-width) {
     top: 20px;
   }
 }

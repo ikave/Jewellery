@@ -2,6 +2,11 @@
   @include container;
   padding-top: 108px;
   padding-bottom: 130px;
+
+  @media (max-width: $medium-width) {
+    padding-top: 74px;
+    padding-bottom: 80px;
+  }
 }
 
 .gallery__wrapper {
@@ -9,6 +14,11 @@
   grid-template-columns: 1fr 1.74fr 1fr 1fr;
   column-gap: 27px;
   padding-top: 11px;
+
+  @media (max-width: $medium-width) {
+    padding-top: 0;
+    column-gap: 16px;
+  }
 
   @media (max-width: $small-width) {
     grid-template-columns: 1fr 1fr;
@@ -33,6 +43,10 @@
 
   &:last-child {
     margin-bottom: 0;
+  }
+
+  @media (max-width: $medium-width) {
+    margin-bottom: 20px;
   }
 }
 
