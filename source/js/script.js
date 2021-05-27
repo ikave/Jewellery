@@ -65,4 +65,3 @@ faqAccordion.forEach((item, index) => {
     faqButtons[index].classList.toggle('faq__toggle--opened');
   })
 })
-
