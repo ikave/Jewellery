@@ -26,6 +26,7 @@ const swiper = new Swiper('.swiper-container', {
     320: {
       pagination: {
         type: 'fraction',
+        clickable: false,
         renderFraction: function (currentClass, totalClass) {
           return '<span class="' + currentClass + '"></span>' +
                   ' of ' +
@@ -52,6 +53,15 @@ const swiper = new Swiper('.swiper-container', {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   },
-
-
 });
+
+const faqAccordeon = document.querySelectorAll('.faq__item');
+const faqButtons = document.querySelectorAll('.faq__toggle');
+
+faqAccordeon.forEach((item, index) => {
+  item.addEventListener('click', () => {
+    item.classList.toggle('faq__item--opened');
+    faqButtons[index].classList.toggle('faq__toggle--opened');
+  })
+})
+

@@ -53,6 +53,15 @@ const swiper = new Swiper('.swiper-container', {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   },
-
-
 });
+
+const faqAccordion = document.querySelectorAll('.faq__item');
+const faqButtons = document.querySelectorAll('.faq__toggle');
+
+faqAccordion.forEach((item, index) => {
+  item.addEventListener('click', () => {
+    item.classList.toggle('faq__item--opened');
+    faqButtons[index].classList.toggle('faq__toggle--opened');
+  })
+})
+
