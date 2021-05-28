@@ -2,10 +2,6 @@
   position: relative;
   z-index: 1;
   width: 100%;
-  height: 463px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   font-family: $secondary-font;
   color: $white;
   background-color: $overlay;
@@ -35,6 +31,14 @@
       background-image: url("../img/intro-mobile@2x.jpg");
     }
   }
+}
+
+.intro__wrapper {
+  @include container;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 463px;
 }
 
 .intro h2 {

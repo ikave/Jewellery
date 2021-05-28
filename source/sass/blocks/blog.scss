@@ -14,6 +14,8 @@
 .blog__content {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+  height: 100%;
 
   @media (max-width: $medium-width) {
     flex-direction: column;

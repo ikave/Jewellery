@@ -16,6 +16,8 @@
 }
 
 .navigation__site {
+  @include container;
+
   @media (max-width: $medium-width) {
     margin-bottom: 41px;
   }
