@@ -31,6 +31,15 @@
       background-image: url("../img/intro-mobile@2x.jpg");
     }
   }
+
+  &--inner {
+    background-image: url("../img/banner.jpg");
+    box-shadow: none;
+  }
+}
+
+.intro--inner .intro__wrapper {
+  min-height: 261px;
 }
 
 .intro__wrapper {
@@ -45,7 +54,7 @@
   margin: 0;
   font-weight: 700;
   font-size: 45px;
-  line-height: 58px;
+  line-height: 1.3;
   text-align: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
@@ -60,11 +69,25 @@
   font-style: italic;
   font-weight: 400;
   font-size: 38px;
-  line-height: 49px;
+  line-height: 1.3;
   text-align: center;
 
   @media (max-width: $small-width) {
     margin-top: -14px;
     font-size: 34px;
   }
+}
+
+.intro--inner h1 {
+  margin: 0;
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 1.3;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.intro--inner p {
+  margin-top: 2px;
+  font-size: 22px;
 }

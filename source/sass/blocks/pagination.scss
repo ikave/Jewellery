@@ -1,0 +1,46 @@
+.pagination {
+  display: flex;
+  justify-content: space-between;
+
+  @media (max-width: $small-width) {
+    justify-content: center;
+  }
+}
+
+.pagination__list {
+  @include reset-list;
+  display: flex;
+}
+
+.pagination__list .pagination__link {
+  color: $gray;
+
+  &--current {
+    color: $text;
+  }
+}
+
+.pagination__item {
+  margin-right: 13px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  @media (max-width: $medium-width) {
+    margin-right: 13px;
+  }
+}
+
+.pagination__link {
+  font-weight: 500;
+  font-size: 16px;
+  color: $text;
+
+  &--prev,
+  &--next {
+    @media (max-width: $small-width) {
+      display: none;
+    }
+  }
+}

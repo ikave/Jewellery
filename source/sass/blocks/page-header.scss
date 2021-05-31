@@ -57,7 +57,7 @@
   align-items: flex-start;
 
   @media (max-width: $medium-width) {
-    padding: 44px 45px 54px;
+    padding: 54px 45px 54px;
   }
 
   @media (max-width: $small-width) {
@@ -68,7 +68,7 @@
 .page-header__toggle {
   display: none;
   width: 25px;
-  height: 16px;
+  height: 18px;
   padding: 0;
   border: none;
   background-color: transparent;
@@ -101,7 +101,7 @@
   color: $accent;
 
   @media (max-width: $medium-width) {
-    top: 20px;
+    top: 30px;
   }
 
   @media (max-width: $small-width) {
@@ -111,6 +111,6 @@
   }
 }
 
-.page-header__logo svg {
+.page-header__logo-image {
   width: 100%;
 }

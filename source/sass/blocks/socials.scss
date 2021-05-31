@@ -10,6 +10,7 @@
   @media (max-width: $small-width) {
     display: flex;
     flex-wrap: wrap;
+    width: auto;
   }
 }
 
