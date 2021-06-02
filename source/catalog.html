@@ -97,118 +97,127 @@
         <h3 class="visually-hidden">Filter catalog</h3>
         <button class="filter__toggle" type="button">Filter</button>
 
-        <form class="filter__form" action="#" method="POST">
-          <fieldset>
-            <div class="filter__heading">
-              <p>Product</p>
-              <button class="filter__list-toggle filter__list-toggle--opened" type="button">
-                <svg width="17" height="10" xmlns="http://www.w3.org/2000/svg">
-                  <use xlink:href="./img/sprite_auto.svg#icon-dropdown"></use>
-                </svg>
-              </button>
-            </div>
-            <ul class="filter__list filter__list--opened">
-              <li class="filter__item">
-                <input class="visually-hidden" type="checkbox" name="necklaces" id="necklaces" checked>
-                <label for="necklaces">Necklaces</label>
-              </li>
-              <li class="filter__item">
-                <input class="visually-hidden" type="checkbox" name="chokers" id="chokers" checked>
-                <label for="chokers">Chokers</label>
-              </li>
-              <li class="filter__item">
-                <input class="visually-hidden" type="checkbox" name="rings" id="rings">
-                <label for="rings">Rings</label>
-              </li>
-              <li class="filter__item">
-                <input class="visually-hidden" type="checkbox" name="earrings" id="earrings" checked>
-                <label for="earrings">Earrings</label>
-              </li>
-            </ul>
-          </fieldset>
+        <div class="popup filter__popup">
+          <div class="popup__wrapper filter__popup-wrapper">
+            <button class="popup__close filter__popup-close" type="button" aria-label="Close">
+              <svg width="14" height="14" xmlns="http://www.w3.org/2000/svg">
+                <use xlink:href="./img/sprite_auto.svg#icon-close"></use>
+              </svg>
+            </button>
+            <form class="filter__form" action="#" method="POST">
+              <fieldset>
+                <div class="filter__heading">
+                  <p>Product</p>
+                  <button class="filter__list-toggle filter__list-toggle--opened" type="button">
+                    <svg width="17" height="10" xmlns="http://www.w3.org/2000/svg">
+                      <use xlink:href="./img/sprite_auto.svg#icon-dropdown"></use>
+                    </svg>
+                  </button>
+                </div>
+                <ul class="filter__list filter__list--opened">
+                  <li class="filter__item">
+                    <input class="visually-hidden" type="checkbox" name="necklaces" id="necklaces" checked>
+                    <label for="necklaces">Necklaces</label>
+                  </li>
+                  <li class="filter__item">
+                    <input class="visually-hidden" type="checkbox" name="chokers" id="chokers" checked>
+                    <label for="chokers">Chokers</label>
+                  </li>
+                  <li class="filter__item">
+                    <input class="visually-hidden" type="checkbox" name="rings" id="rings">
+                    <label for="rings">Rings</label>
+                  </li>
+                  <li class="filter__item">
+                    <input class="visually-hidden" type="checkbox" name="earrings" id="earrings" checked>
+                    <label for="earrings">Earrings</label>
+                  </li>
+                </ul>
+              </fieldset>
 
-          <fieldset>
-            <div class="filter__heading">
-              <p>Material</p>
-              <button class="filter__list-toggle" type="button">
-                <svg width="17" height="10" xmlns="http://www.w3.org/2000/svg">
-                  <use xlink:href="./img/sprite_auto.svg#icon-dropdown"></use>
-                </svg>
-              </button>
-            </div>
-            <ul class="filter__list">
-              <li class="filter__item">
-                <input class="visually-hidden" type="checkbox" name="gold" id="gold">
-                <label for="gold">Gold</label>
-              </li>
-              <li class="filter__item">
-                <input class="visually-hidden" type="checkbox" name="silver" id="silver">
-                <label for="silver">Selver</label>
-              </li>
-            </ul>
-          </fieldset>
+              <fieldset>
+                <div class="filter__heading">
+                  <p>Material</p>
+                  <button class="filter__list-toggle" type="button">
+                    <svg width="17" height="10" xmlns="http://www.w3.org/2000/svg">
+                      <use xlink:href="./img/sprite_auto.svg#icon-dropdown"></use>
+                    </svg>
+                  </button>
+                </div>
+                <ul class="filter__list">
+                  <li class="filter__item">
+                    <input class="visually-hidden" type="checkbox" name="gold" id="gold">
+                    <label for="gold">Gold</label>
+                  </li>
+                  <li class="filter__item">
+                    <input class="visually-hidden" type="checkbox" name="silver" id="silver">
+                    <label for="silver">Selver</label>
+                  </li>
+                </ul>
+              </fieldset>
 
-          <fieldset>
-            <div class="filter__heading">
-              <p>Collection</p>
-              <button class="filter__list-toggle" type="button">
-                <svg width="17" height="10" xmlns="http://www.w3.org/2000/svg">
-                  <use xlink:href="./img/sprite_auto.svg#icon-dropdown"></use>
-                </svg>
-              </button>
-            </div>
-            <ul class="filter__list">
-              <li class="filter__item">
-                <input class="visually-hidden" type="checkbox" name="pink-flamingo" id="pink-flamingo">
-                <label for="pink-flamingo">Pink flamingo</label>
-              </li>
-              <li class="filter__item">
-                <input class="visually-hidden" type="checkbox" name="dreams" id="dreams">
-                <label for="dreams">Dreams</label>
-              </li>
-            </ul>
-          </fieldset>
+              <fieldset>
+                <div class="filter__heading">
+                  <p>Collection</p>
+                  <button class="filter__list-toggle" type="button">
+                    <svg width="17" height="10" xmlns="http://www.w3.org/2000/svg">
+                      <use xlink:href="./img/sprite_auto.svg#icon-dropdown"></use>
+                    </svg>
+                  </button>
+                </div>
+                <ul class="filter__list">
+                  <li class="filter__item">
+                    <input class="visually-hidden" type="checkbox" name="pink-flamingo" id="pink-flamingo">
+                    <label for="pink-flamingo">Pink flamingo</label>
+                  </li>
+                  <li class="filter__item">
+                    <input class="visually-hidden" type="checkbox" name="dreams" id="dreams">
+                    <label for="dreams">Dreams</label>
+                  </li>
+                </ul>
+              </fieldset>
 
-          <fieldset>
-            <div class="filter__heading">
-              <p>Price</p>
-              <button class="filter__list-toggle" type="button">
-                <svg width="17" height="10" xmlns="http://www.w3.org/2000/svg">
-                  <use xlink:href="./img/sprite_auto.svg#icon-dropdown"></use>
-                </svg>
-              </button>
-            </div>
-            <div class="filter__range">
-              <div class="filter__range-controls">
-                <button type="button" aria-label="Min price toggle"></button>
-                <span class="filter__range-line"></span>
-                <button type="button" aria-label="Max price toggle"></button>
+              <fieldset>
+                <div class="filter__heading">
+                  <p>Price</p>
+                  <button class="filter__list-toggle" type="button">
+                    <svg width="17" height="10" xmlns="http://www.w3.org/2000/svg">
+                      <use xlink:href="./img/sprite_auto.svg#icon-dropdown"></use>
+                    </svg>
+                  </button>
+                </div>
+                <div class="filter__range">
+                  <div class="filter__range-controls">
+                    <button type="button" aria-label="Min price toggle"></button>
+                    <span class="filter__range-line"></span>
+                    <button type="button" aria-label="Max price toggle"></button>
+                  </div>
+                  <div class="filter__range-inputs">
+                    <label>
+                      <span>$</span>
+                      <input type="number" name="range-min" value="55">
+                    </label>
+                    <label>
+                      <span>$</span>
+                      <input  type="number" name="range-max" value="155">
+                    </label>
+                  </div>
+                </div>
+              </fieldset>
+
+              <div class="filter__button-wrapper">
+                <button type="submit">Apply</button>
+                <button type="reset">Clear All</button>
               </div>
-              <div class="filter__range-inputs">
-                <label>
-                  <span>$</span>
-                  <input type="number" name="range-min" value="55">
-                </label>
-                <label>
-                  <span>$</span>
-                  <input  type="number" name="range-max" value="155">
-                </label>
-              </div>
-            </div>
-          </fieldset>
 
-          <div class="filter__button-wrapper">
-            <button type="submit">Apply</button>
-            <button type="reset">Clear All</button>
+            </form>
           </div>
-
-        </form>
+        </div>
       </section>
 
       <div class="catalog__wrapper">
         <ul class="catalog__list">
           <li class="catalog__item new__item">
-            <a href="#">
+            <a href="product-card.html">
               <!-- 1х: 270px; 2x: 540px -->
             <picture>
               <source type="image/webp" srcset="./img/catalog/double-pearl-earrings.webp 1x, ./img/catalog/double-pearl-earrings@2x.webp 2x">
@@ -455,6 +464,10 @@
       </div>
     </div>
   </footer>
-  <script src="./js/script.js"></script>
+  <script src="./js/menu.js"></script>
+  <script src="./js/login.js"></script>
+  <script src="./js/filter.js"></script>
+  <script src="./js/accordion.js"></script>
+
 </body>
 </html>

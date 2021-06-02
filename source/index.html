@@ -259,7 +259,10 @@
         <div class="blog__column">
           <article class="blog__article blog-article">
             <div class="blog-article__image">
-              <img src="./img/blog-care-desktop.jpg" loading="lazy" alt="">
+              <picture>
+                <source srcset="./img/blog-care-desktop.webp 1x, ./img/blog-care-desktop@2x.webp 2x" type="image/webp">
+                <img src="./img/blog-care-desktop.jpg" srcset="./img/blog-care-desktop@2x.jpg" loading="lazy" alt="Golden earrings">
+              </picture>
             </div>
             <div class="blog-article__content">
               <time datetime="2019-09-30">September 30, 2019</time>
@@ -269,7 +272,10 @@
           </article>
           <article class="blog__article blog-article blog-article--reverse">
             <div class="blog-article__image">
-              <img src="./img/blog-power-desktop.jpg" loading="lazy" alt="">
+              <picture>
+                <source srcset="./img/blog-power-desktop.webp 1x, ./img/blog-power-desktop@2x.webp 2x" type="image/webp">
+                <img src="./img/blog-power-desktop.jpg" srcset="./img/blog-power-desktop@2x.jpg" loading="lazy" alt="Golden earrings set">
+              </picture>
             </div>
             <div class="blog-article__content">
               <time datetime="2019-09-23">September 23, 2019</time>
@@ -281,7 +287,10 @@
         <div class="blog__column">
           <article class="blog__article blog-article blog-article--big">
             <div class="blog-article__image">
-              <img src="./img/blog-trends-desktop.jpg" loading="lazy" alt="">
+              <picture>
+                <source srcset="./img/blog-trends-desktop.webp 1x, ./img/blog-trends-desktop@2x.webp 2x" type="image/webp">
+                <img src="./img/blog-trends-desktop.jpg" srcset="./img/blog-trends-desktop@2x.jpg" loading="lazy" alt="Jewellery set">
+              </picture>
             </div>
             <div class="blog-article__content">
               <time datetime="2019-09-16">September 16, 2019</time>
@@ -497,7 +506,39 @@
       </div>
     </div>
   </footer>
+
+  <section class="popup popup-login">
+    <div class="popup__wrapper popup-login__wrapper">
+      <button class="popup__close" type="button" aria-label="Close">
+        <svg width="14" height="14" xmlns="http://www.w3.org/2000/svg">
+          <use xlink:href="./img/sprite_auto.svg#icon-cross"></use>
+        </svg>
+      </button>
+      <h2>Log In</h2>
+      <form action="#" method="POST" class="login-form">
+        <div class="login-form__inputs-wrapper">
+          <div class="login-form__field">
+            <label for="login-email">Your E-mail</label>
+            <input id="login-email" type="email" name="login-email" placeholder="Your E-mail">
+          </div>
+          <div class="login-form__field">
+            <label for="login-password">Password</label>
+            <input id="login-password" type="password" name="login-password" placeholder="Password">
+          </div>
+        </div>
+        <div class="login-form__forgot-wrapper">
+          <a href="#" class="login-form__forgot">Forgot your password?</a>
+        </div>
+        <button class="button" type="submit">Log In</button>
+      </form>
+      <p class="popup-login__sign-up">Don’t have an account? <a href="#">Sign up</a></p>
+
+    </div>
+  </section>
+
   <script src="./js/vendors/swiper-bundle.min.js"></script>
-  <script src="./js/script.js"></script>
+  <script src="./js/slider-new.js"></script>
+  <script src="./js/menu.js"></script>
+  <script src="./js/login.js"></script>
 </body>
 </html>
