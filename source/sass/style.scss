@@ -5,6 +5,8 @@
 @import "helpers/mixins";
 @import "base/base";
 @import "blocks/visually-hidden";
+@import "blocks/button";
+@import "blocks/popup";
 @import "blocks/page-header";
 @import "blocks/user-nav";
 @import "blocks/site-nav";
@@ -28,3 +30,8 @@
 @import "blocks/catalog";
 @import "blocks/filter";
 @import "blocks/pagination";
+@import "blocks/product";
+
+@import "blocks/popup-add";
+@import "blocks/popup-login";
+@import "blocks/login-form";

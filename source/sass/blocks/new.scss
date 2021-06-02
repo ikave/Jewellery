@@ -1,13 +1,16 @@
 .new {
   @include container;
   padding-top: 119px;
+  padding-bottom: 112px;
 
   @media (max-width: $medium-width) {
     padding-top: 69px;
+    padding-bottom: 66px;
   }
 
   @media (max-width: $small-width) {
     padding-top: 59px;
+    padding-bottom: 51px;
   }
 }
 
@@ -38,6 +41,7 @@
 
   @media (max-width: $small-width) {
     margin-bottom: 15px;
+    min-height: 136px;
   }
 }
 

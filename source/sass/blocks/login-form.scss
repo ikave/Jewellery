@@ -1,0 +1,49 @@
+.login-form {
+  margin-bottom: 15px;
+}
+
+.login-form__field {
+  margin-bottom: 35px;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+
+  @media (max-width: $small-width) {
+    margin-bottom: 30px;
+  }
+}
+
+.login-form__field label {
+  @include visually-hidden;
+}
+
+.login-form__field input {
+  width: 100%;
+  padding: 0 0 9px 0;
+  border: none;
+  border-bottom: 1px solid $text;
+  background-color: transparent;
+}
+
+.login-form__forgot-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 45px;
+
+  @media (max-width: $small-width) {
+    margin-bottom: 35px;
+  }
+}
+
+.login-form__forgot {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+  text-align: right;
+  color: $gray;
+}
+
+.login-form button[type="submit"] {
+  width: 100%;
+}

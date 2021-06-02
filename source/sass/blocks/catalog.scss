@@ -16,7 +16,7 @@
     flex-direction: column;
     justify-content: flex-start;
     padding-top: 40px;
-    padding-bottom: 75px;
+    padding-bottom: 84px;
   }
 }
 
@@ -41,6 +41,7 @@
 
   @media (max-width: $small-width) {
     grid-template-columns: repeat(2, 1fr);
+    row-gap: 29px;
   }
 }
 
@@ -50,6 +51,10 @@
 
   @media (max-width: $medium-width) {
     padding-top: 73px;
+  }
+
+  @media (max-width: $small-width) {
+    padding-top: 47px;
   }
 }
 

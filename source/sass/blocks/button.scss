@@ -1,0 +1,13 @@
+.button {
+  display: inline-block;
+  vertical-align: top;
+  border: 1px solid $accent;
+  padding: 24px 20px 23px;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  text-align: center;
+  color: $white;
+  background-color: $accent;
+  cursor: pointer;
+}

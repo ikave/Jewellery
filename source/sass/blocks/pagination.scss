@@ -30,6 +30,10 @@
   @media (max-width: $medium-width) {
     margin-right: 13px;
   }
+
+  @media (max-width: $small-width) {
+    margin-right: 23px;
+  }
 }
 
 .pagination__link {

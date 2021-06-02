@@ -1,0 +1,41 @@
+.popup {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba($text, 0.25);
+  z-index: 1;
+
+  &--opened {
+    display: flex;
+  }
+}
+
+.popup__wrapper {
+  position: relative;
+  background-color: $white;
+}
+
+.popup__wrapper h2 {
+  margin: 0;
+  font-family: $secondary-font;
+  text-align: center;
+  font-weight: 700;
+  font-size: 26px;
+}
+
+.popup__close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 14px;
+  height: 14px;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}

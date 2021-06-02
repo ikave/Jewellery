@@ -29,12 +29,42 @@
   }
 }
 
-.filter__form {
-  font-family: $main-font;
+.filter__popup {
+  display: flex;
+  position: static;
+  padding: 0;
 
   @media (max-width: $medium-width) {
     display: none;
+
+    &--opened {
+      display: flex;
+      position: absolute;
+    }
   }
+}
+
+.filter__popup-close {
+  display: none;
+
+  @media (max-width: $medium-width) {
+    display: block;
+  }
+}
+
+.filter__popup-wrapper {
+  width: 100%;
+
+  @media (max-width: $medium-width) {
+    max-width: 442px;
+    width: 100%;
+    padding: 40px;
+  }
+}
+
+.filter__form {
+  width: 100%;
+  font-family: $main-font;
 }
 
 .filter__form fieldset {
