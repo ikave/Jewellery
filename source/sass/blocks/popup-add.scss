@@ -1,5 +1,12 @@
 .popup-add {
   padding: 0 15px;
+
+  &--independent-page {
+    display: flex;
+    position: static;
+    background-color: transparent;
+    padding: 100px 25px;
+  }
 }
 
 .popup-add__wrapper {

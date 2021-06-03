@@ -12,6 +12,10 @@
   }
 }
 
+.filter--nojs .filter__list-toggle {
+  display: none;
+}
+
 .filter__toggle {
   display: none;
   width: 100%;
@@ -54,11 +58,13 @@
 
 .filter__popup-wrapper {
   width: 100%;
+  box-shadow: none;
 
   @media (max-width: $medium-width) {
     max-width: 442px;
     width: 100%;
     padding: 40px;
+    box-shadow: 0px 4px 32px rgba(121, 121, 121, 0.24);
   }
 }
 
@@ -108,6 +114,11 @@
 
 .filter__list-toggle--opened svg {
   transform: rotate(0);
+}
+
+.filter--nojs .filter__list {
+  display: block;
+  padding-bottom: 16px;
 }
 
 .filter__list {
@@ -173,7 +184,7 @@
 
 .filter__range {
   margin-top: -10px;
-  padding: 0 25px 18px;
+  padding: 0 25px 38px;
 }
 
 .filter__range-controls {
@@ -188,19 +199,30 @@
     width: 100%;
     height: 1px;
     background-color: $bg;
-    z-index: -1;
+
   }
 }
 
 .filter__range button {
   position: relative;
-  width: 15px;
-  height: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding: 0;
   border: none;
-  border-radius: 50%;
-  background-color: $accent;
+  background-color: transparent;
   cursor: pointer;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 15px;
+    height: 15px;
+    padding: 0;
+    border: none;
+    border-radius: 50%;
+    background-color: $accent;
+  }
 
   &:first-child {
     margin-left: 22%;
@@ -211,10 +233,17 @@
   }
 }
 
+.filter__range button span {
+  position: absolute;
+  top: 20px;
+
+}
+
 .filter__range-line {
   flex-grow: 1;
   height: 1px;
   background-color: $accent;
+  z-index: 1;
 }
 
 .filter__range-inputs {

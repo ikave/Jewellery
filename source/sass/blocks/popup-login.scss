@@ -1,5 +1,12 @@
 .popup-login {
   padding: 0 25px;
+
+  &--independent-page {
+    display: flex;
+    position: static;
+    background-color: transparent;
+    padding: 100px 25px;
+  }
 }
 
 .popup-login__wrapper {

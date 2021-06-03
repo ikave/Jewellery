@@ -174,8 +174,8 @@
         </div>
       </header>
 
-        <div class="slider__wrapper swiper-container">
-          <ul class="popular__list swiper-wrapper">
+        <div class="slider__container">
+          <ul class="popular__list slider__wrapper">
             <li class="goods swiper-slide">
               <a href="#">
                 <!-- 1х: 270px; 2x: 540px -->
@@ -321,7 +321,7 @@
             </li>
           </ul>
 
-          <div class="slider__pagination swiper-pagination"></div>
+          <div class="slider__pagination"></div>
         </div>
 
       </section>
@@ -459,7 +459,7 @@
         </div>
 
         <div class="popup-add__actions">
-          <a class="popup-add__actions-button button" href="catalog.html">Continue shopping</a>
+          <a class="popup-add__actions-button button button--empty" href="catalog.html">Continue shopping</a>
           <a class="popup-add__actions-button button" href="cart.html">Checkout</a>
         </div>
       </div>
@@ -467,10 +467,36 @@
     </div>
   </section>
 
-  <script src="./js/vendors/swiper-bundle.min.js"></script>
-  <script src="./js/product-slider.js"></script>
-  <script src="./js/slider-new.js"></script>
-  <script src="./js/menu.js"></script>
-  <script src="./js/accordion.js"></script>
+  <section class="popup popup-login">
+    <div class="popup__wrapper popup-login__wrapper">
+      <button class="popup__close" type="button" aria-label="Close">
+        <svg width="14" height="14" xmlns="http://www.w3.org/2000/svg">
+          <use xlink:href="./img/sprite_auto.svg#icon-cross"></use>
+        </svg>
+      </button>
+      <h2>Log In</h2>
+      <form action="#" method="POST" class="login-form">
+        <div class="login-form__inputs-wrapper">
+          <div class="login-form__field">
+            <label for="login-email">Your E-mail</label>
+            <input id="login-email" type="email" name="login-email" placeholder="Your E-mail">
+          </div>
+          <div class="login-form__field">
+            <label for="login-password">Password</label>
+            <input id="login-password" type="password" name="login-password" placeholder="Password">
+          </div>
+        </div>
+        <div class="login-form__forgot-wrapper">
+          <a href="#" class="login-form__forgot">Forgot your password?</a>
+        </div>
+        <button class="button" type="submit">Log In</button>
+      </form>
+      <p class="popup-login__sign-up">Don’t have an account? <a href="#">Sign up</a></p>
+
+    </div>
+  </section>
+
+  <script src="./js/vendors/swiper-bundle.js"></script>
+  <script src="./js/main.js"></script>
 </body>
 </html>

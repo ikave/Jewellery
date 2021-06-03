@@ -85,7 +85,8 @@
   }
 }
 
-.faq__item--opened dt {
+.faq__item--opened dt,
+.faq--nojs dt {
   margin-bottom: 7px;
 
   @media (max-width: $medium-width) {
@@ -97,8 +98,13 @@
   }
 }
 
-.faq__item--opened dd {
+.faq__item--opened dd,
+.faq--nojs dd {
   display: block;
+}
+
+.faq--nojs .faq__toggle {
+  display: none;
 }
 
 .faq__toggle {

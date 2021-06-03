@@ -93,7 +93,7 @@
     <section class="catalog">
       <h2 class="visually-hidden">Jewellery store catalog</h2>
 
-      <section class="catalog__filter filter">
+      <section class="catalog__filter filter filter--nojs">
         <h3 class="visually-hidden">Filter catalog</h3>
         <button class="filter__toggle" type="button">Filter</button>
 
@@ -179,27 +179,27 @@
               <fieldset>
                 <div class="filter__heading">
                   <p>Price</p>
-                  <button class="filter__list-toggle" type="button" aria-label="Show spoiler">
+                  <button class="filter__list-toggle filter__list-toggle--opened" type="button" aria-label="Show spoiler">
                     <svg width="17" height="10" xmlns="http://www.w3.org/2000/svg">
                       <use xlink:href="./img/sprite_auto.svg#icon-dropdown"></use>
                     </svg>
                   </button>
                 </div>
-                <div class="filter__range">
+                <div class="filter__list filter__list--opened filter__range">
                   <div class="filter__range-controls">
-                    <button type="button" aria-label="Min price toggle"></button>
+                    <button type="button" aria-label="Min price toggle">
+                      <span>$&nbsp;55</span>
+                    </button>
                     <span class="filter__range-line"></span>
-                    <button type="button" aria-label="Max price toggle"></button>
+                    <button type="button" aria-label="Max price toggle">
+                      <span>$&nbsp;155</span>
+                    </button>
                   </div>
-                  <div class="filter__range-inputs">
-                    <label>
-                      <span>$</span>
-                      <input type="number" name="range-min" value="55">
-                    </label>
-                    <label>
-                      <span>$</span>
-                      <input type="number" name="range-max" value="155">
-                    </label>
+                  <div class="filter__range-inputs visually-hidden">
+                    <label for="range-min">Filter range min</label>
+                    <input type="number" id="range-min" name="range-min" value="55">
+                    <label for="range-max">Filter range max</label>
+                    <input type="number" id="range-max" name="range-max" value="155">
                   </div>
                 </div>
               </fieldset>
@@ -464,10 +464,38 @@
       </div>
     </div>
   </footer>
-  <script src="./js/menu.js"></script>
-  <script src="./js/login.js"></script>
-  <script src="./js/filter.js"></script>
-  <script src="./js/accordion.js"></script>
+
+  <section class="popup popup-login">
+    <div class="popup__wrapper popup-login__wrapper">
+      <button class="popup__close" type="button" aria-label="Close">
+        <svg width="14" height="14" xmlns="http://www.w3.org/2000/svg">
+          <use xlink:href="./img/sprite_auto.svg#icon-cross"></use>
+        </svg>
+      </button>
+      <h2>Log In</h2>
+      <form action="#" method="POST" class="login-form">
+        <div class="login-form__inputs-wrapper">
+          <div class="login-form__field">
+            <label for="login-email">Your E-mail</label>
+            <input id="login-email" type="email" name="login-email" placeholder="Your E-mail">
+          </div>
+          <div class="login-form__field">
+            <label for="login-password">Password</label>
+            <input id="login-password" type="password" name="login-password" placeholder="Password">
+          </div>
+        </div>
+        <div class="login-form__forgot-wrapper">
+          <a href="#" class="login-form__forgot">Forgot your password?</a>
+        </div>
+        <button class="button" type="submit">Log In</button>
+      </form>
+      <p class="popup-login__sign-up">Don’t have an account? <a href="#">Sign up</a></p>
+
+    </div>
+  </section>
+
+  <script src="./js/vendors/swiper-bundle.js"></script>
+  <script src="./js/main.js"></script>
 
 </body>
 </html>

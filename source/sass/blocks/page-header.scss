@@ -1,7 +1,9 @@
 .page-header {
   &--opened,
   &--nojs {
-    background-color: $accent;
+    @media (max-width: $medium-width) {
+      background-color: $accent;
+    }
   }
 
   &--opened {
