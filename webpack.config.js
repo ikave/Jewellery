@@ -20,16 +20,16 @@ const config = {
 
 };
 
-// const vendorConfig = {
-//   name: 'vendors',
-//   entry: './source/js/vendors/swiper-bundle.js',
-//   output: {
-//     filename: 'vendors.js',
-//     path: path.resolve(__dirname, 'source/js'),
-//     iife: false,
-//   },
-//   devtool: false
-// };
+const vendor = {
+  name: 'vendors',
+  entry: './source/js/vendors/swiper-bundle.min.js',
+  output: {
+    filename: 'vendors.js',
+    path: path.resolve(__dirname, 'source/js'),
+    iife: false,
+  },
+  devtool: false
+};
 
-module.exports =  config;
+module.exports =  [config, vendor];
 

@@ -1,16 +1,16 @@
 .popular {
   @include container;
   padding-top: 119px;
-  padding-bottom: 112px;
+  padding-bottom: 126px;
 
   @media (max-width: $medium-width) {
     padding-top: 69px;
-    padding-bottom: 66px;
+    padding-bottom: 78px;
   }
 
   @media (max-width: $small-width) {
     padding-top: 59px;
-    padding-bottom: 51px;
+    padding-bottom: 61px;
   }
 }
 

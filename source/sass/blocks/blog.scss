@@ -1,13 +1,9 @@
 .blog {
   @include container;
-  margin-top: -11px;
-
-  @media (max-width: $medium-width) {
-    margin-top: -4px;
-  }
+  padding-top: 4px;
 
   @media (max-width: $small-width) {
-    margin-top: -7px;
+    padding-top: 3px;
   }
 }
 

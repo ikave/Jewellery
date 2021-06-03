@@ -5,16 +5,16 @@
 .slider__container {
   width: 100%;
   overflow: hidden;
-  padding-bottom: 87px;
+  padding-bottom: 55px;
 
   @media (max-width: $medium-width) {
     margin-top: -10px;
-    padding-bottom: 75px;
+    padding-bottom: 45px;
   }
 
   @media (max-width: $small-width) {
     margin-top: -15px;
-    padding-bottom: 65px;
+    padding-bottom: 35px;
   }
 }
 
@@ -39,8 +39,7 @@
 .slider__pagination .swiper-pagination-bullet {
   width: auto;
   height: auto;
-  margin: 0;
-  padding: 2px;
+  padding: 0 6px;
   font-weight: 500;
   font-size: 16px;
   color: $gray;
@@ -55,7 +54,7 @@
 .slider__pagination .swiper-pagination-current,
 .slider__pagination .swiper-pagination-total {
   @media (max-width: $small-width) {
-    padding: 0 6px;
+    padding: 0 10px;
   }
 }
 

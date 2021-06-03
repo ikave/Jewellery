@@ -4,6 +4,14 @@
   flex-direction: column;
   align-items: center;
   margin-bottom: 60px;
+
+  @media (max-width: $medium-width) {
+    margin-bottom: 64px;
+  }
+
+  @media (max-width: $medium-width) {
+    margin-bottom: 60px;
+  }
 }
 
 .section-header h2 {
