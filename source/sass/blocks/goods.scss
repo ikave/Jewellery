@@ -1,29 +1,9 @@
-.new {
-  @include container;
-  padding-top: 119px;
-  padding-bottom: 112px;
-
-  @media (max-width: $medium-width) {
-    padding-top: 69px;
-    padding-bottom: 66px;
-  }
-
-  @media (max-width: $small-width) {
-    padding-top: 59px;
-    padding-bottom: 51px;
-  }
-}
-
-.new__list {
-  @include reset-list;
-}
-
-.new__item {
+.goods {
   display: flex;
   justify-content: center;
 }
 
-.new__item a {
+.goods a {
   color: $text;
 
   @media (max-width: $medium-width) {
@@ -31,7 +11,7 @@
   }
 }
 
-.new__item img {
+.goods img {
   display: block;
   margin-bottom: 21px;
 
@@ -45,14 +25,14 @@
   }
 }
 
-.new__item h3 {
+.goods h3 {
   margin: 0 0 6px 0;
   font-weight: 500;
   font-size: 16px;
   text-align: center;
 }
 
-.new__item p {
+.goods p {
   margin: 0;
   font-weight: 700;
   font-size: 14px;

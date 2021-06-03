@@ -1,0 +1,19 @@
+.popular {
+  @include container;
+  padding-top: 119px;
+  padding-bottom: 112px;
+
+  @media (max-width: $medium-width) {
+    padding-top: 69px;
+    padding-bottom: 66px;
+  }
+
+  @media (max-width: $small-width) {
+    padding-top: 59px;
+    padding-bottom: 51px;
+  }
+}
+
+.popular__list {
+  @include reset-list;
+}
