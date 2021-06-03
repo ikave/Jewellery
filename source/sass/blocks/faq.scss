@@ -107,7 +107,17 @@
   background-color: transparent;
   cursor: pointer;
   transform: rotate(180deg);
+  transform-origin: center;
   transition: transform 0.2s ease;
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 
   &--opened {
     transform: rotate(0deg);

@@ -10,4 +10,26 @@
   color: $white;
   background-color: $accent;
   cursor: pointer;
+  transition: color 0.2s ease, background-color 0.2s ease;
+
+  &:hover,
+  &:focus {
+    color: $text;
+    background-color: transparent;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+
+  &--empty {
+    color: $text;
+    background-color: transparent;
+
+    &:hover,
+    &:focus {
+      color: $white;
+      background-color: $accent;
+    }
+  }
 }

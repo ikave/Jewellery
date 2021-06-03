@@ -45,6 +45,7 @@
 }
 
 .popup-login__sign-up a {
+  @include link-hover;
   margin-left: 5px;
   color: $text;
 }

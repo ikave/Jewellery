@@ -4,6 +4,7 @@
 }
 
 .goods a {
+  @include link-hover;
   color: $text;
 
   @media (max-width: $medium-width) {

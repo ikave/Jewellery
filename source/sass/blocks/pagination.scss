@@ -37,6 +37,7 @@
 }
 
 .pagination__link {
+  @include link-hover;
   font-weight: 500;
   font-size: 16px;
   color: $text;

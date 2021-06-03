@@ -24,6 +24,11 @@
   border: none;
   border-bottom: 1px solid $text;
   background-color: transparent;
+
+  &:hover,
+  &:focus {
+    border-color: $accent;
+  }
 }
 
 .login-form__forgot-wrapper {
@@ -37,6 +42,7 @@
 }
 
 .login-form__forgot {
+  @include link-hover;
   font-weight: 500;
   font-size: 12px;
   line-height: 18px;

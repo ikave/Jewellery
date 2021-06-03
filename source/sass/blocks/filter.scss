@@ -39,7 +39,7 @@
 
     &--opened {
       display: flex;
-      position: absolute;
+      position: fixed;
     }
   }
 }
@@ -122,6 +122,7 @@
 }
 
 .filter__item {
+  @include link-hover;
   margin-bottom: 12px;
 }
 
@@ -144,9 +145,29 @@
   }
 }
 
+.filter__item input:focus + label {
+  color: $accent;
+}
+
 .filter__item input:checked + label {
+
   &::before {
     background-color: $accent;
+  }
+}
+
+.filter__item input:disabled + label {
+  color: $gray;
+  cursor: initial;
+
+  &::before {
+    border-color: $gray;
+  }
+}
+
+.filter__item input:disabled:checked + label {
+  &::before {
+    background-color: $gray;
   }
 }
 
@@ -233,16 +254,29 @@
   font-weight: 500;
   font-size: 16px;
   text-align: center;
-  color: $text;
-  background-color: transparent;
+  color: $white;
+  background-color: $accent;
   cursor: pointer;
+  transition: color 0.2s ease, background-color 0.2s ease;
+
+  &:hover,
+  &:focus {
+    color: $text;
+    background-color: transparent;
+  }
 
   &:last-child {
     margin-bottom: 0;
   }
 }
 
-.filter__form button[type="submit"] {
-  color: $white;
-  background-color: $accent;
+.filter__form button[type="reset"] {
+  color: $text;
+  background-color: transparent;
+
+  &:hover,
+  &:focus {
+    color: $white;
+    background-color: $accent;
+  }
 }
