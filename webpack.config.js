@@ -22,7 +22,10 @@ const config = {
 
 const vendor = {
   name: 'vendors',
-  entry: './source/js/vendors/swiper-bundle.min.js',
+  entry: [
+
+    './source/js/vendors/swiper-bundle.js',
+  ],
   output: {
     filename: 'vendors.js',
     path: path.resolve(__dirname, 'source/js'),
@@ -32,4 +35,3 @@ const vendor = {
 };
 
 module.exports =  [config, vendor];
-

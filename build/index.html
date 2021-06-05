@@ -6,13 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name="description" content="Jewellery store official web site">
   <title>Jewellery</title>
-  <link rel="preload" href="./fonts/poppins/Poppins-Regular.woff2" type="font/woff2" as="font" crossorigin="">
-  <link rel="preload" href="./fonts/poppins/Poppins-Medium.woff2" type="font/woff2" as="font" crossorigin="">
-  <link rel="preload" href="./fonts/poppins/Poppins-Bold.woff2" type="font/woff2" as="font" crossorigin="">
-  <link rel="preload" href="./fonts/cormorant-garamond/CormorantGaramond-Bold.woff2" type="font/woff2" as="font" crossorigin="">
-  <link rel="preload" href="./fonts/cormorant-garamond/CormorantGaramond-Italic.woff2" type="font/woff2" as="font" crossorigin="">
-  <link rel="preload" href="./fonts/cormorant-garamond/CormorantGaramond-MediumItalic.woff2" type="font/woff2" as="font" crossorigin="">
-  <link rel="preload" href="./fonts/cormorant-garamond/CormorantGaramond-SemiBold.woff2" type="font/woff2" as="font" crossorigin="">
+  <link rel="preload" href="./fonts/poppins/poppins-medium.woff2" type="font/woff2" as="font" crossorigin="">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
@@ -40,7 +34,7 @@
         </li>
         <li class="user-nav__item">
           <a href="#" class="user-nav__link header-cart" aria-label="Cart">
-            <span class="header-cart__text">Cart <span class="header-cart__count">0</span></span>
+            <span>Cart <span class="header-cart__count">0</span></span>
             <svg class="page-header__cart-icon header-cart__icon" width="20" height="18" xmlns="http://www.w3.org/2000/svg">
               <use xlink:href="./img/sprite_auto.svg#icon-cart"></use>
             </svg>
@@ -97,12 +91,12 @@
         <a href="#">Shop Now</a>
         <div class="slider__actions">
           <button class="slider__button slider__button--prev swiper-button-prev" type="button" aria-label="Previous slide">
-            <svg class="" width="30" height="11" xmlns="http://www.w3.org/2000/svg">
+            <svg width="30" height="11" xmlns="http://www.w3.org/2000/svg">
               <use xlink:href="./img/sprite_auto.svg#icon-arrow"></use>
             </svg>
           </button>
           <button class="slider__button slider__button--next swiper-button-next" type="button" aria-label="Next slide">
-            <svg class="" width="30" height="11" xmlns="http://www.w3.org/2000/svg">
+            <svg width="30" height="11" xmlns="http://www.w3.org/2000/svg">
               <use xlink:href="./img/sprite_auto.svg#icon-arrow"></use>
             </svg>
           </button>
@@ -144,17 +138,7 @@
               <p>$ <span>215</span></p>
             </a>
           </li>
-          <li class="popular__item goods swiper-slide">
-            <a href="product-card.html">
-              <!-- 1х: 270px; 2x: 540px -->
-              <picture>
-                <source type="image/webp" srcset="./img/galaxy-earrings-desktop.webp 1x, ./img/galaxy-earrings-desktop@2x.webp 2x">
-                <img src="./img/galaxy-earrings-desktop.jpg" srcset="./img/galaxy-earrings-desktop@2x.jpg 2x" width="270" height="284" alt="Galaxy earrings">
-              </picture>
-              <h3>Galaxy earrings</h3>
-              <p>$ <span>95</span></p>
-            </a>
-          </li>
+
           <li class="popular__item goods swiper-slide">
             <a href="product-card.html">
               <!-- 1х: 270px; 2x: 540px -->
@@ -441,30 +425,30 @@
       <div class="footer__navigation footer-nav">
         <ul class="footer-nav__list">
           <li class="footer-nav__item">
-            <a class="footer-nav__link" href="#">Ordering & Payment</a>
+            <a href="#">Ordering & Payment</a>
           </li>
           <li class="footer-nav__item">
-            <a class="footer-nav__link" href="#">Terms & Conditions</a>
+            <a href="#">Terms & Conditions</a>
           </li>
           <li class="footer-nav__item">
-            <a class="footer-nav__link" href="#">Returns & Exchanges</a>
+            <a href="#">Returns & Exchanges</a>
           </li>
           <li class="footer-nav__item">
-            <a class="footer-nav__link" href="#">Delivery</a>
+            <a href="#">Delivery</a>
           </li>
         </ul>
         <ul class="footer-nav__list">
           <li class="footer-nav__item">
-            <a class="footer-nav__link" href="#">About CH</a>
+            <a href="#">About CH</a>
           </li>
           <li class="footer-nav__item">
-            <a class="footer-nav__link" href="#">Stores & Hours</a>
+            <a href="#">Stores & Hours</a>
           </li>
           <li class="footer-nav__item">
-            <a class="footer-nav__link" href="#">Jobs</a>
+            <a href="#">Jobs</a>
           </li>
           <li class="footer-nav__item">
-            <a class="footer-nav__link" href="#">Contact Us</a>
+            <a href="#">Contact Us</a>
           </li>
         </ul>
       </div>
@@ -536,7 +520,7 @@
     </div>
   </section>
 
-  <script src="./js/vendors/swiper-bundle.min.js"></script>
+  <script src="./js/vendors.js"></script>
   <script src="./js/main.js"></script>
 
 </body>

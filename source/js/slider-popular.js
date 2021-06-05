@@ -1,4 +1,5 @@
 'use strict';
+import Swiper from './vendors/swiper-bundle';
 
 (() => {
   const slider = document.querySelector('.slider');

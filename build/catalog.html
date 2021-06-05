@@ -6,13 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name="description" content="Jewellery store official web site">
   <title>Jewellery</title>
-  <link rel="preload" href="./fonts/poppins/Poppins-Regular.woff2" type="font/woff2" as="font" crossorigin="">
-  <link rel="preload" href="./fonts/poppins/Poppins-Medium.woff2" type="font/woff2" as="font" crossorigin="">
-  <link rel="preload" href="./fonts/poppins/Poppins-Bold.woff2" type="font/woff2" as="font" crossorigin="">
-  <link rel="preload" href="./fonts/cormorant-garamond/CormorantGaramond-Bold.woff2" type="font/woff2" as="font" crossorigin="">
-  <link rel="preload" href="./fonts/cormorant-garamond/CormorantGaramond-Italic.woff2" type="font/woff2" as="font" crossorigin="">
-  <link rel="preload" href="./fonts/cormorant-garamond/CormorantGaramond-MediumItalic.woff2" type="font/woff2" as="font" crossorigin="">
-  <link rel="preload" href="./fonts/cormorant-garamond/CormorantGaramond-SemiBold.woff2" type="font/woff2" as="font" crossorigin="">
+  <link rel="preload" href="./fonts/poppins/poppins-medium.woff2" type="font/woff2" as="font" crossorigin="">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
@@ -40,7 +34,7 @@
         </li>
         <li class="user-nav__item">
           <a href="#" class="user-nav__link header-cart" aria-label="Cart">
-            <span class="header-cart__text">Cart <span class="header-cart__count">0</span></span>
+            <span>Cart <span class="header-cart__count">0</span></span>
             <svg class="page-header__cart-icon header-cart__icon" width="20" height="18" xmlns="http://www.w3.org/2000/svg">
               <use xlink:href="./img/sprite_auto.svg#icon-cart"></use>
             </svg>
@@ -197,9 +191,9 @@
                   </div>
                   <div class="filter__range-inputs visually-hidden">
                     <label for="range-min">Filter range min</label>
-                    <input type="number" id="range-min" name="range-min" value="55">
+                    <input type="number" id="range-min" min="0" max="290" name="range-min" value="55">
                     <label for="range-max">Filter range max</label>
-                    <input type="number" id="range-max" name="range-max" value="155">
+                    <input type="number" id="range-max" min="10" max="300" name="range-max" value="155">
                   </div>
                 </div>
               </fieldset>
@@ -399,30 +393,30 @@
       <div class="footer__navigation footer-nav">
         <ul class="footer-nav__list">
           <li class="footer-nav__item">
-            <a class="footer-nav__link" href="#">Ordering & Payment</a>
+            <a href="#">Ordering & Payment</a>
           </li>
           <li class="footer-nav__item">
-            <a class="footer-nav__link" href="#">Terms & Conditions</a>
+            <a href="#">Terms & Conditions</a>
           </li>
           <li class="footer-nav__item">
-            <a class="footer-nav__link" href="#">Returns & Exchanges</a>
+            <a href="#">Returns & Exchanges</a>
           </li>
           <li class="footer-nav__item">
-            <a class="footer-nav__link" href="#">Delivery</a>
+            <a href="#">Delivery</a>
           </li>
         </ul>
         <ul class="footer-nav__list">
           <li class="footer-nav__item">
-            <a class="footer-nav__link" href="#">About CH</a>
+            <a href="#">About CH</a>
           </li>
           <li class="footer-nav__item">
-            <a class="footer-nav__link" href="#">Stores & Hours</a>
+            <a href="#">Stores & Hours</a>
           </li>
           <li class="footer-nav__item">
-            <a class="footer-nav__link" href="#">Jobs</a>
+            <a href="#">Jobs</a>
           </li>
           <li class="footer-nav__item">
-            <a class="footer-nav__link" href="#">Contact Us</a>
+            <a href="#">Contact Us</a>
           </li>
         </ul>
       </div>
@@ -494,8 +488,7 @@
     </div>
   </section>
 
-  <script src="./js/vendors/swiper-bundle.js"></script>
+  <script src="./js/vendors.js"></script>
   <script src="./js/main.js"></script>
-
 </body>
 </html>
