@@ -18,8 +18,8 @@
  * Released on: May 31, 2021
  */
 
- (function (global, factory) {
-   true ? module.exports = factory() :
+  (function (global, factory) {
+    true ? module.exports = factory() :
   0;
 }(this, (function () { 'use strict';
 
@@ -9867,7 +9867,7 @@
 /************************************************************************/
 /******/ // The module cache
 /******/ var __webpack_module_cache__ = {};
-/******/ 
+/******/
 /******/ // The require function
 /******/ function __webpack_require__(moduleId) {
 /******/ 	// Check if module is in cache
@@ -9881,14 +9881,14 @@
 /******/ 		// no module.loaded needed
 /******/ 		exports: {}
 /******/ 	};
-/******/ 
+/******/
 /******/ 	// Execute the module function
 /******/ 	__webpack_modules__[moduleId].call(module.exports, module, module.exports, __webpack_require__);
-/******/ 
+/******/
 /******/ 	// Return the exports of the module
 /******/ 	return module.exports;
 /******/ }
-/******/ 
+/******/
 /************************************************************************/
 /******/ /* webpack/runtime/compat get default export */
 /******/ !function() {
@@ -9901,7 +9901,7 @@
 /******/ 		return getter;
 /******/ 	};
 /******/ }();
-/******/ 
+/******/
 /******/ /* webpack/runtime/define property getters */
 /******/ !function() {
 /******/ 	// define getter functions for harmony exports
@@ -9913,12 +9913,12 @@
 /******/ 		}
 /******/ 	};
 /******/ }();
-/******/ 
+/******/
 /******/ /* webpack/runtime/hasOwnProperty shorthand */
 /******/ !function() {
 /******/ 	__webpack_require__.o = function(obj, prop) { return Object.prototype.hasOwnProperty.call(obj, prop); }
 /******/ }();
-/******/ 
+/******/
 /******/ /* webpack/runtime/make namespace object */
 /******/ !function() {
 /******/ 	// define __esModule on exports
@@ -9929,7 +9929,7 @@
 /******/ 		Object.defineProperty(exports, '__esModule', { value: true });
 /******/ 	};
 /******/ }();
-/******/ 
+/******/
 /************************************************************************/
 var __webpack_exports__ = {};
 // This entry need to be wrapped in an IIFE because it need to be in strict mode.
