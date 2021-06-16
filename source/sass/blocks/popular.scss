@@ -5,12 +5,24 @@
 
   @media (max-width: $medium-width) {
     padding-top: 69px;
-    padding-bottom: 78px;
+    padding-bottom: 75px;
   }
 
   @media (max-width: $small-width) {
     padding-top: 59px;
-    padding-bottom: 61px;
+    padding-bottom: 65px;
+  }
+}
+
+.popular__header {
+  margin-bottom: 60px;
+
+  @media (max-width: $medium-width) {
+    margin-bottom: 64px;
+  }
+
+  @media (max-width: $small-width) {
+    margin-bottom: 60px;
   }
 }
 

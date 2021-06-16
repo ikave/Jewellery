@@ -14,6 +14,18 @@
   }
 }
 
+.gallery__header {
+  margin-bottom: 60px;
+
+  @media (max-width: $medium-width) {
+    margin-bottom: 64px;
+  }
+
+  @media (max-width: $small-width) {
+    margin-bottom: 60px;
+  }
+}
+
 .gallery__wrapper {
   display: grid;
   grid-template-columns: 1fr 1.74fr 1fr 1fr;

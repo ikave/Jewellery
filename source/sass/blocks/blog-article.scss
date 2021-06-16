@@ -25,7 +25,9 @@
 }
 
 .blog-article__image {
+  position: relative;
   width: 50%;
+  overflow: hidden;
 
   @media (max-width: $medium-width) {
     max-height: 300px;
@@ -33,8 +35,7 @@
 
   @media (max-width: $small-width) {
     width: 100%;
-    max-height: 256px;
-    overflow: hidden;
+    height: 256px;
   }
 }
 
@@ -43,6 +44,7 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center center;
 }
 
 .blog-article__content {
@@ -72,7 +74,12 @@
 
   @media (max-width: $small-width) {
     position: static;
+    height: 256px;
   }
+}
+
+.blog-article--big img {
+  object-position: 0 0;
 }
 
 .blog-article--big .blog-article__content {
