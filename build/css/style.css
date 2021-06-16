@@ -2547,10 +2547,13 @@ body.hidden {
     .filter__popup {
       display: none; }
       .filter__popup--opened {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        position: fixed; } }
+        display: block;
+        position: fixed;
+        height: 100vh;
+        background-color: #ffffff;
+        top: 0;
+        left: 0;
+        overflow-y: auto; } }
 
 .filter__popup-close {
   display: none; }
@@ -2566,6 +2569,7 @@ body.hidden {
     .filter__popup-wrapper {
       max-width: 442px;
       width: 100%;
+      margin: 0 auto;
       padding: 40px;
       -webkit-box-shadow: 0px 4px 32px rgba(121, 121, 121, 0.24);
               box-shadow: 0px 4px 32px rgba(121, 121, 121, 0.24); } }
