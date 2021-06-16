@@ -14,6 +14,7 @@
 
     addButton.addEventListener('click', (evt) => {
       evt.preventDefault();
+      document.body.style.overflow = 'hidden';
       popupAdd.classList.add('popup--opened');
       popupAdd.addEventListener('click', (evt) => {
         if (evt.target === popupAdd) {
