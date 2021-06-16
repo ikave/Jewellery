@@ -3309,6 +3309,7 @@ body.hidden {
   padding: 0 0 9px 0;
   border: none;
   border-bottom: 1px solid #1d1613;
+  border-radius: 0;
   background-color: transparent; }
   .login-form__field input:hover, .login-form__field input:focus {
     border-color: #a87b62; }
