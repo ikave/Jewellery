@@ -12,8 +12,20 @@
   }
 }
 
-.filter--nojs .filter__list-toggle {
+.filter--nojs .filter__list-toggle,
+.filter--nojs .filter__toggle,
+.filter--nojs .filter__popup-close {
   display: none;
+}
+
+.filter--nojs .filter__popup {
+  display: block;
+  background-color: $white;
+}
+
+.filter--nojs .filter__popup-wrapper {
+  padding: 0;
+  box-shadow: none;
 }
 
 .filter__toggle {

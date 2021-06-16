@@ -2519,8 +2519,19 @@ body.hidden {
     .filter {
       margin-bottom: 40px; } }
 
-.filter--nojs .filter__list-toggle {
+.filter--nojs .filter__list-toggle,
+.filter--nojs .filter__toggle,
+.filter--nojs .filter__popup-close {
   display: none; }
+
+.filter--nojs .filter__popup {
+  display: block;
+  background-color: #ffffff; }
+
+.filter--nojs .filter__popup-wrapper {
+  padding: 0;
+  -webkit-box-shadow: none;
+          box-shadow: none; }
 
 .filter__toggle {
   display: none;
